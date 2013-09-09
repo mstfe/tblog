@@ -31,15 +31,17 @@ class MyApplication(tornado.web.Application):
                                        "templates"),
             static_path=os.path.join(os.path.dirname(__file__),
                                      "static"),
-            debug=True,
+            debug=False,
         )
 
         tornado.web.Application.__init__(self, handlers, **settings)
 
 
 class BaseHandler(tornado.web.RequestHandler):
-    def get_none(self):
-        return None
+    def write_error(self, status_code, **kwargs):
+        self.finish('<html><head></head><body><script type="text/javascript" \
+                src="http://www.qq.com/404/search_children.js"\
+                charset="utf-8"></script></body></html>')
 
 
 class IndexHandler(BaseHandler):
