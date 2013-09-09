@@ -1,0 +1,177 @@
+a{
+  color: #0A79C2;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FFF;
+}
+input, textarea{
+	border: 1px solid #ccc;
+	padding: 0.5em;
+	line-height: 1.2em;
+	background: #fff;
+	-webkit-appearance: none;
+  -webkit-box-shadow: 1px 1px 1px #fff;
+  -webkit-border-radius: 0.5em;
+    
+}
+form{
+	margin:0 auto;
+	padding:0 auto;
+}
+body{
+  background: #E8E8E8;
+  color: #333;
+  margin:0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  overflow: scroll;
+}
+
+header h1{
+  font-size: 2.5em;
+  line-height: 2.0em;
+  font-family: Helvetica;
+  background: #ccc;
+  padding-left: 10px;
+}
+header span{
+  color:green;
+  font-size: 0.5em;
+  line-height: 2.0em;
+  background: #ccc;
+  padding-left: 20px;
+}
+nav{
+  position:fixed;
+  _position:absolute;
+  bottom:1%;
+  right:10%;
+  background:#689D76;
+  width:25%;
+  text-align:center;
+  font-weight: bolder;
+  z-index:999999;
+}
+nav .round{
+  float: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+section{
+
+}
+article{
+  float:left;
+  width: 100%;
+  line-height: 1.2em;
+  border-left: 3px solid #FF8000;
+  padding-left: 3%;
+  margin-top: 10px;
+  
+}
+article a:hover{
+  color: #FF8000;
+}
+.clearfloat{
+  clear:both
+}
+article span{
+  color: #336;
+  float: left;
+}
+article h2{
+  float: left;
+  margin: 0 0 0 10px;
+}
+.detail h2{
+  margin-left: 0px;
+}
+.detail div{
+  padding-top: 20px;
+  display: block;
+}
+.detail pre{
+  width: 80%;
+}
+.links h2{
+
+}
+.links span{
+  margin-left: 5px;
+  float: none;
+}
+footer{
+  clear: both;
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+}
+
+
+.login_form ul{
+	width: 50%;
+	list-style-type: none;
+}
+.login_form li{
+	padding: 12px;
+	border-bottom: 1px solid #eee;
+}
+.login_form label{
+	width: 70px;
+    display: inline-block;
+}
+.login_form input{
+	width: 200px;
+}
+.login_form button{
+	margin-left: 120px;
+	background-color: #68b12f;
+	border: 1px solid #509111;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 20px;
+}
+.login_form button:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+
+.add_form ul{
+	list-style-type: none;
+}
+.add_form li{
+	padding: 12px;
+	border-bottom: 1px solid #eee;
+}
+.add_form label{
+	width: 50px;
+    display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+.add_form input{
+	width: 80%;
+}
+.add_form textarea{
+	padding: 8px;
+	width: 80%;
+	height: 300px;
+}
+.add_form button{
+	margin-left: 120px;
+	background-color: #68b12f;
+	border: 1px solid #509111;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 20px;
+}
+.add_form button:hover {
+    opacity:.85;
+    cursor: pointer;
+}

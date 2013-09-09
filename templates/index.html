@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% autoescape %} 
+{% block content %}
+    {% for entrydict in entriesdict %}
+        <article class="index">
+            <div>
+                <span>{{ entrydict[0] }}  »</span>
+                <h2><a href="/entry/{{ entrydict[0] }}_{{ entrydict[1] }}">{{ entrydict[1] }}</a></h2>
+            </div>     
+        </article>
+    {% end %}
+    <div class="clearfloat"></div>
+{% end %}

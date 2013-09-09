@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% autoescape %}
+
+{% block title %}{{ title }}{% end %}
+{% block content %}
+    <article class="detail">
+        <h2><a href="">{{ title }}</a></h2>
+        <div>{{ entry }}</div>
+    </article>
+	
+{% end %}

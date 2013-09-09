@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% autoescape %}
+
+{% block title %} 存档 {% end %}
+{% block content %}
+    {% for entrydict in entriesdict %}
+        <article>
+            <div>
+                <span>{{ entrydict[0] }} »</span>
+                <h2><a href="/entry/{{ entrydict[0] }}_{{ entrydict[1] }}">{{ entrydict[1] }}</a></h2>
+            </div>     
+        </article>
+    {% end %}
+{% end %}

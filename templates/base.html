@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ escape(handler.settings["blog_title"]) }} | {% block title %}多分享，少口水{% end %}</title>
+    <link type="text/css" rel="Stylesheet"  href="{{ static_url("css/style.css") }}">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link type="text/css" rel="Stylesheet"  href="{{ static_url("css/shCore.css") }}">
+    <link type="text/css" rel="Stylesheet"  href="{{ static_url("css/shThemeDefault.css") }}">
+    <script src="{{ static_url("js/shCore.js") }}"></script>
+    <script src="{{ static_url("js/shBrushPython.js") }}"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all();
+        $(document).ready(function(){
+            $("pre>code").each(function(){
+                $(this).replaceWith(this.innerHTML);
+            });
+            $("pre").addClass("brush:py");
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+        <h1><a href="/">DUST8</a><span>多分享，少口水</span></h1> 
+    </header>
+    {% block nav %}
+    <nav>
+        <div class="round"><a href="/">首页</a></div>
+        <div class="round"><a href="/archive">存档</a></div>
+        <div class="round"><a href="/about">关于</a></div>
+        <div class="round"><a href="/recommendablelinks">推链</a></div>
+        <div class="round"><a href="/friendlinks">友链</a></div>
+    </nav>
+    {% end %}
+    <section class="contents">
+    {% block content %}{% end %}
+    </section>
+    <footer>
+        {% block footer%}
+        <hr>
+		<div class="shm">Copyright &copy 2011-2013 
+			Powered by Tronado 
+			Theme by <a href="/"><strong>DUST8</strong></a> 
+		</div>
+        {% end %}
+    </footer>
+	<script src="{{ static_url("js/main.js") }}"></script>
+</body>
+
+</html>
